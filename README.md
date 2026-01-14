@@ -14,3 +14,15 @@
 1. 安裝依賴: `npm install`
 2. 啟動開發服務器: `npm run dev`
 
+
+## 部署到 GitHub Pages 🚀
+- 我已經將 `HashRouter` 加入並添加了部署腳本，適合 GitHub Pages 的靜態托管。
+- 安裝（已在本地 package.json 中新增）：
+  - `npm install react-router-dom`
+  - `npm install --save-dev gh-pages`
+- 本地部署命令：
+  1. 構建：`npm run build`
+  2. 部署：`npm run deploy`（這會使用 `gh-pages` 將 `dist` 推送到 `gh-pages` 分支）
+- 如果你想手動建立並推送 `gh-pages` 分支：
+  - `git checkout -b gh-pages`
+  - `git push -u origin gh-pages`
